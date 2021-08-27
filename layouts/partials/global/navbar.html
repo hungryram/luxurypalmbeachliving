@@ -1,0 +1,108 @@
+
+{{ $navbar := .Site.Data.appearance.branding }}
+{{ $navColor := .Site.Data.appearance.header }}
+{{ $navContact := .Site.Data.profile.contact_information }}
+{{ $headerSocial := .Site.Data.profile.social_media }}
+<style>
+    nav.uk-navbar-sticky ul li a,
+    .uk-navbar-sticky ul li a svg {
+        color: #000!important;
+    }
+</style>
+<div class="uk-visible@s" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; cls-inactive: uk-navbar-transparent; top: 200" {{ if $navColor.transparent_background }}{{ else }}style="background: {{ $navColor.header_background_color }};"{{ end }}>
+    <div class="top-navbar" style="background:{{ if $navColor.top_header_color }}{{ $navColor.top_header_color }}{{ else }}transparent{{ end }}">
+        <nav class="uk-container uk-container-{{ if .IsHome }}medium{{ else }}large{{ end }}" uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav top-bar">
+                    {{ if $navContact.cell }}<li><a style="{{ if $navColor.enable_white_text_top }}color: #ddd{{ else }}color: #000;{{ end }}" href="tel:{{ $navContact.cell }}">{{ $navContact.cell }}</a></li>{{ end }}
+                    {{ if $navContact.email }}<li><a style="{{ if $navColor.enable_white_text_top }}color: #ddd{{ else }}color: #000;{{ end }}" href="mailto:{{ $navContact.email }}">{{ $navContact.email }}</a></li>{{ end }}
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="main-nav uk-navbar-container uk-navbar-transparent"{{ if not .IsHome }} style="border-bottom: 1px solid rgb(213 213 213 / 20%);"{{ end }}>
+        <div class="uk-container uk-container-{{ if .IsHome }}medium{{ else }}large{{ end }}" style="padding-top:10px;padding-bottom:10px;">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="{{ .Site.BaseURL }}">
+                        {{ if $navColor.transparent_background }}
+                        <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }} logo" width="{{ .Site.Data.appearance.branding.logo_width }}" class="white-logo">
+                        <img src="{{ .Site.Data.appearance.branding.dark_logo }}" alt="{{ .Site.Data.profile.company_name }} logo" width="{{ .Site.Data.appearance.branding.logo_width }}" class="dark-logo">
+                        {{ else }}
+                        <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }} logo" width="{{ .Site.Data.appearance.branding.logo_width }}" class="white-logo">
+                        {{ end }}
+                    </a>
+
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                        <li>
+                            <a href="#" style="{{ if $navColor.enable_white_text }}color: #fff{{ else }}color: #000;{{ end }}">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    {{ range .Children }}
+                                    <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </li>
+                        {{ else }}
+                        <li><a href="{{ .URL | absURL }}" style="{{ if $navColor.enable_white_text }}color: #fff{{ else }}color: #000;{{ end }}">{{ .Name }}</a></li>
+                        {{ end }}
+                        {{ end }}
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<!-- mobile -->
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive:uk-navbar-transparent; top: 400">
+    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-padding-small uk-box-shadow-small">
+        <div class="uk-navbar-left">
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Data.appearance.branding.logo }}" alt="" width="100">
+            </a>
+        </div>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle style="{{ if $navColor.enable_white_text }}color: #fff{{ else }}color: #000;{{ end }}"></a>
+        </div>
+    </nav>
+    </div>
+    <div id="mobile-menu-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical" uk-nav>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="uk-parent">
+                    <a href="#" class="uk-text-large uk-text-light">{{ .Name }}</a>
+                    <ul class="uk-nav-sub">
+                        {{ range .Children }}
+                        <li><a href="{{ .URL | absURL }}" class="uk-text-large uk-text-light">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <li><a href="{{ .URL | absURL }}" class="uk-text-large uk-text-light">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header"></li>
+                {{ if $headerSocial.instagram }}<a href="{{ $headerSocial.instagram }}" class="uk-icon-button uk-margin-small-right uk-margin-small-top" uk-icon="instagram" target="_blank"></a>{{ end }}
+                {{ if $headerSocial.facebook }}<a href="{{ $headerSocial.facebook }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="facebook" target="_blank"></a>{{ end }}
+                {{ if $headerSocial.pinterest }}<a href="{{ $headerSocial.pinterest }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="pinterest" target="_blank"></a>{{ end }}
+                {{ if $headerSocial.twitter }}<a href="{{ $headerSocial.twitter }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="twitter" target="_blank"></a>{{ end }}
+                {{ if $navContact.email }}<a href="{{ $navContact.email }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="mail" target="_blank"></a>{{ end }}
+                {{ if $navContact.phone }}<a href="{{ $navContact.phone }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="receiver" target="_blank"></a>{{ end }}
+                {{ if $navContact.cell }}<a href="{{ $navContact.cell }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="phone" target="_blank"></a>{{ end }}
+
+            </ul>
+        </div>
+    </div>
