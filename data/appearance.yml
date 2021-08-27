@@ -19,9 +19,9 @@ footer:
   important_documents: []
 branding:
   site_title: Real Estate
-  logo: https://res.cloudinary.com/hungryram19/image/upload/v1628898739/templates/realestate2/re-logo_l6o3kg.png
-  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1605403329/templates/realestate2/cropped-logotrans_qowdad.png
-  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1628898739/templates/realestate2/re-logo_l6o3kg.png
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1630050680/templates/hoku/lgoo2_si6rhh.png
+  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1630050503/templates/hoku/logo_cynbeo.png
+  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1630050503/templates/hoku/logo_cynbeo.png
   logo_width: 120
 header:
   top_header_color: "#070811"
@@ -41,10 +41,10 @@ sidebar:
     heading: More Listings
   single_property_sidebar: true
 colors:
-  button_background_color: "#3fb9be"
-  button_text_color: "#FFFFFF"
-  links: "#3fb9be"
-  accent: "#3fb9be"
+  button_background_color: ""
+  button_text_color: "#C69C6D"
+  links: "#C69C6D"
+  accent: "#C69C6D"
 search_field:
   disable_search: false
   search_by_state: false

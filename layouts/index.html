@@ -66,7 +66,7 @@
   {{ if eq "home-agent" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
   {{ $agents := where $.Site.RegularPages "Type" "our-team" }}
-  <div class="uk-section">
+  <div class="uk-section uk-section-large" style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1630048898/templates/hoku/bg_tgrpjm.jpg) no-repeat center;background-size:cover">
     <div class="uk-container uk-container-large">
       {{ if .heading }}
       <h2 class="uk-text-center">{{ .heading }}</h2>
@@ -83,18 +83,21 @@
                         <a href="{{ .Permalink }}">
                             <div class="uk-card uk-card-default" style="box-shadow:none">
                                 <div class="uk-card-media-top uk-cover-container">
-                                    <canvas height="350"></canvas>
+                                    <canvas height="450"></canvas>
                                     {{ if .Params.details.agent_photo }}
                                     <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" uk-cover>
                                     {{ else }}
                                     <img src="/assets/user.jpg" alt="">
                                     {{ end }}
+                                    <div class="uk-overlay-agent uk-position-cover"></div>
+
                                 </div>
-                                <div class="uk-card-body uk-card-default uk-text-center">
-                                    <h3 class="uk-h4">{{ .Title }}</h3>
-                                    <a href="" class="uk-display-block">{{ .Params.contact.cell }}</a>
-                                    <a href="" class="uk-display-block">{{ .Params.contact.email }}</a>                                
-                                </div>
+                                <div class="uk-overlay uk-position-bottom uk-light uk-text-center">
+                                  <h3 class="uk-h4">{{ .Title }}</h3>
+                                  <a href="tel:{{ .Params.contact.cell }}" class="uk-display-block">{{ .Params.contact.cell }}</a>
+                                  <a href="mailto:{{ .Params.contact.email }}" class="uk-display-block">{{ .Params.contact.email }}</a>
+                                  <a href="" class="accent">Read more</a>
+                              </div>
                             </div>
                         </a>
                     </li>
@@ -103,13 +106,10 @@
                       <h3>No Agents Found</h3>
                     {{ end }}
                 </ul>
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover accent" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover accent" href="#" uk-slidenav-next uk-slider-item="next"></a>
             </div>
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-        </div>
-        <div class="uk-margin uk-text-center">
-          <a href="/our-team" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>View more</a>
         </div>
     </div>
 </div>
@@ -154,7 +154,7 @@
 
   {{ if eq "text-and-image" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
-  <div class="uk-section">
+  <div class="uk-section uk-section-large" style="background:#151614;">
       <div class="uk-container uk-container-large">
         <div class="uk-text-left uk-flex-middle" uk-grid>
             <div class="uk-width-1-2@s">
@@ -163,11 +163,11 @@
                 </div>
             </div>
             <div class="uk-width-1-2@s">
-                <div class="uk-card uk-card-body">
-                    <h2>{{ .heading }}</h2>
+                <div class="uk-card uk-card-body uk-white">
+                    <h1 class="uk-white">{{ .heading }}</h1>
                     <p>{{ .body | markdownify }}</p>
                     {{ if and .button_link .button }}
-                    <a href="{{ .button_link }}" class="btn-primary uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>{{ .button }}</a>
+                    <a href="{{ .button_link }}" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>{{ .button }}</a>
                     {{ end }}
                 </div>
             </div>
@@ -177,7 +177,7 @@
   {{ end }}
 
   {{ if eq "featured-boxes" .template }}
-  <div class="uk-section">
+  <div class="uk-section featured-boxes">
     <div class="uk-container uk-container-large">
       {{ if .heading }}
       <h2 class="uk-text-center">{{ .heading }}</h2>
@@ -191,10 +191,10 @@
           <a href="{{ .link }}">
             <div class="uk-inline uk-cover-container" style="border-radius:4px;">
               <img src="{{ .image }}" alt="" uk-cover>
-              <canvas height="400" width="800"></canvas>
+              <canvas height="500" width="400"></canvas>
               <div class="feature-box-overlay uk-position-cover"></div>
-              <div class="uk-overlay uk-position-center uk-light">
-                  <h3>{{ .heading }}</h3>
+              <div class="uk-position-bottom uk-light">
+                  <h3 class="uk-text-left uk-margin-remove">{{ .heading }}</h3>
               </div>
             </div>
           </a>
@@ -259,7 +259,7 @@
 
   {{ if eq "active-listings" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
-  <div class="uk-section">
+  <div class="uk-section uk-section-medium" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1630049481/templates/hoku/kitchenoverlay_ouv5e4.jpg) no-repeat center;background-size:cover">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center">
         {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
