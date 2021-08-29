@@ -67,14 +67,17 @@
   {{ $buttonColor := $.Site.Data.appearance.colors }}
   {{ $agents := where $.Site.RegularPages "Type" "our-team" }}
   <div class="uk-section uk-section-large" style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1630048898/templates/hoku/bg_tgrpjm.jpg) no-repeat center;background-size:cover">
-    <div class="uk-container uk-container-large">
+    <div class="uk-container uk-container-large uk-text-center">
+      {{ if .subtitle }}
+      <p class="uk-h4 accent">{{ .subtitle }}</p>
+      {{ end }}
       {{ if .heading }}
-      <h2 class="uk-text-center">{{ .heading }}</h2>
+      <h2 class="uk-text-center uk-white" style="font-size: 2.5rem;">{{ .heading }}</h2>
       {{ end }}
       {{ if .body }}
       <p class="uk-text-center">{{ .body | markdownify }}</p>
       {{ end }}
-        <div uk-slider>
+        <div class="uk-margin-medium-top" uk-slider>
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
                 <ul class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-grid" uk-height-match="target: .uk-card">
                     {{ if gt $agents 0 }}
@@ -115,43 +118,6 @@
 </div>
   {{ end }}
 
-  {{ if eq "home-blog" .template }}
-  {{ $blog := where $.Site.RegularPages "Type" "blog" }}
-
-    <div class="uk-section">
-      <div class="uk-container uk-container-large">
-        {{ if .heading }}
-        <h2 class="uk-text-center">{{ .heading }}</h2>
-        {{ end }}
-        {{ if .body }}
-        <p class="uk-text-center">{{ .body | markdownify }}</p>
-        {{ end }}
-        <div uk-grid uk-height-match="target: .uk-card">
-          {{ range first 4 (where $.Site.RegularPages "Type" "blog") }}
-          <div class="uk-width-1-2@s">
-            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-              <div class="uk-card-media-left uk-cover-container">
-                {{ if .Params.featured_image }}
-                <img src="{{ .Params.featured_image }}" alt="" style="width:100%;height:100%;object-fit:cover">
-                {{ else }}
-                <img src="/assets/nophoto.jpg" alt="no photo" style="width:100%;height:100%;object-fit:cover">
-                {{ end }}
-              </div>
-              <div>
-                  <div class="uk-card-body">
-                      <h5 class="uk-text-bold">{{ .Title }}</h5>
-                      <p>{{ .Summary | truncate 100 }}</p>
-                      <p><a href="{{ .Permalink }}" class="link">Read more...</a></p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-        </div>
-      </div>
-  {{ end }}
-
   {{ if eq "text-and-image" .template }}
   {{ $buttonColor := $.Site.Data.appearance.colors }}
   <div class="uk-section uk-section-large" style="background:#151614;">
@@ -165,7 +131,9 @@
             <div class="uk-width-1-2@s">
                 <div class="uk-card uk-card-body uk-white">
                     <h1 class="uk-white">{{ .heading }}</h1>
-                    <p>{{ .body | markdownify }}</p>
+                    <div class="uk-white content">
+                      {{ .body | markdownify }}
+                    </div>
                     {{ if and .button_link .button }}
                     <a href="{{ .button_link }}" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>{{ .button }}</a>
                     {{ end }}
@@ -179,6 +147,9 @@
   {{ if eq "featured-boxes" .template }}
   <div class="uk-section featured-boxes">
     <div class="uk-container uk-container-large">
+      {{ if .subtitle }}
+      <p class="uk-h4 accent">{{ .subtitle }}</p>
+      {{ end }}
       {{ if .heading }}
       <h2 class="uk-text-center">{{ .heading }}</h2>
       {{ end }}
@@ -262,12 +233,17 @@
   <div class="uk-section uk-section-medium" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1630049481/templates/hoku/kitchenoverlay_ouv5e4.jpg) no-repeat center;background-size:cover">
     <div class="uk-container uk-container-large">
       <div class="uk-text-center">
-        {{ if .heading }}<h2 class="uk-dark">{{ .heading }}</h2>{{ end }}
+        {{ if .subtitle }}
+        <p class="uk-h4 accent">{{ .subtitle }}</p>
+        {{ end }}
+        {{ if .heading }}
+        <h2 class="uk-text-center" style="font-size: 2.5rem;">{{ .heading }}</h2>
+        {{ end }}
         {{ if .body }}
         <p>{{ .body | markdownify }}</p>
         {{ end }}
       </div>
-      <div class="uk-slider-container-offset" uk-slider>
+      <div class="uk-slider-container-offset uk-margin-medium-top" uk-slider>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
             <ul class="uk-slider-items uk-child-width-1-3@s uk-grid uk-grid-medium">
               {{ range first 6 (where $.Site.RegularPages "Type" "listings") }}

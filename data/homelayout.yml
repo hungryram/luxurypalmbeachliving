@@ -4,7 +4,7 @@ slideshow:
   subtitle: 
   link_label: Read More
   link: https://www.hungryram.com
-  image: https://res.cloudinary.com/hungryram19/image/upload/v1630050278/templates/hoku/kitchen_t4bvph.jpg
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1630214632/templates/hoku/shutterstock_12168997453_gnlkhq.jpg
   body: Optionally integrate with IDX or use built in tools
   enable_white_text: false
 - heading: Super Versatile for Custom Features
@@ -14,7 +14,7 @@ slideshow:
   body: Need features specific for your business? Get in touch and we'll be happy
     to help
   enable_white_text: false
-  image: https://res.cloudinary.com/hungryram19/image/upload/v1630050288/templates/hoku/kny5aathxiwy8akkx-220_comzju.jpg
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1630214737/templates/hoku/shutterstock_19212034972_dgqug9.jpg
 home_sections:
 - template: home-agent
   heading: Best in the Business
@@ -28,7 +28,7 @@ home_sections:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula
   button: Read more
   button_link: "/our-team"
-  image: https://res.cloudinary.com/hungryram19/image/upload/v1605402573/templates/realestate2/agent-4_ovchvb.jpg
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1630209664/templates/hoku/ali-morshedlou-WMD64tMfc4k-unsplash_hyqoui.jpg
   image_alt_tag: John
   image_width: 400
 - template: active-listings

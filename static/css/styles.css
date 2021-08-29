@@ -10,6 +10,10 @@ body a:hover {
     text-decoration: none;
 }
 
+.accent {
+    color: rgb(198, 156, 109)!important;
+}
+
 body a {
     color: inherit;
 }
@@ -36,6 +40,15 @@ body uk-h5,
 body uk-h6 {
     font-family: 'Playfair Display', serif!important;
     font-weight: 600;
+}
+
+body div.content h1,
+body div.content h2,
+body div.content h3,
+body div.content h4,
+body div.content h5,
+body div.content h6 {
+    color: inherit;
 }
 
 #home-section h2 {
@@ -174,13 +187,13 @@ div.uk-navbar-dropdown {
     display: none;
 }
 
-div.full-nav-wrapper:hover .dark-logo {
+/* div.full-nav-wrapper:hover .dark-logo {
     display: block;
 }
 
 div.full-nav-wrapper:hover .white-logo {
     display: none;
-}
+} */
 
 
 /* FORM */

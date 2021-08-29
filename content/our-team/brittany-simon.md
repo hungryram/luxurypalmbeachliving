@@ -8,7 +8,7 @@ email = "brittany@hungryram.com"
 fax = ""
 phone = "896-845-2165"
 [details]
-agent_photo = "https://res.cloudinary.com/hungryram19/image/upload/v1605401929/templates/realestate2/freestocks-9UVmlIb0wJU-unsplash_safxe6.jpg"
+agent_photo = "https://res.cloudinary.com/hungryram19/image/upload/v1630209893/templates/hoku/olga-zabegina-A3MleA0jtoE-unsplash_dunvbl.jpg"
 languages = ["English"]
 license_number = "01971995"
 license_type = "License Number"

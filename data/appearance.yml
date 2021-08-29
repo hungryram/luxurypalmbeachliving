@@ -41,8 +41,8 @@ sidebar:
     heading: More Listings
   single_property_sidebar: true
 colors:
-  button_background_color: 
-  button_text_color: "#C69C6D"
+  button_background_color: "#C69C6D"
+  button_text_color: "#ffffff"
   links: "#C69C6D"
   accent: "#C69C6D"
 search_field:

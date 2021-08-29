@@ -6,12 +6,11 @@
     <div class="uk-container">
         <p class="uk-text-center">Want to find out the value of your home? Please fill out the form below.</p>
         <div uk-grid>
-            <div class="uk-width-{{ $size.column_size }}">
+            <div>
                 <div class="uk-card uk-card-body">
                     {{ partial "templates/home-value-form" . }}
                 </div>
             </div>
-            {{ partial "templates/sidebar" . }}
         </div>
     </div>
 </div>
