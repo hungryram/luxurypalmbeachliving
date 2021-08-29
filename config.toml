@@ -1,4 +1,4 @@
-baseURL = "https://vesper.netlify.app/"
+baseURL = "https://hoku.netlify.app/"
 languageCode = "en-us"
 summaryLength = 25
 title = "My New Hugo Site"
