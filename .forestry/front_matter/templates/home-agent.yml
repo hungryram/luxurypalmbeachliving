@@ -2,6 +2,11 @@
 label: Agent Showcase
 hide_body: true
 fields:
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
 - name: heading
   type: text
   config:
