@@ -32,12 +32,12 @@ home_sections:
   image_alt_tag: John
   image_width: 400
 - template: active-listings
-  heading: Active Listings
-  body: View active listings in the office
-  subtitle: ''
+  heading: Luxury Homes in Los Angeles
+  body: ''
+  subtitle: EXLUSIVE HOMES
 - template: featured-boxes
-  heading: The Featured Box
-  body: Add in Featured Boxes and link them wherever you need to
+  heading: ''
+  body: ''
   featured:
   - heading: View Active Listings
     image: https://res.cloudinary.com/hungryram19/image/upload/v1605402110/templates/realestate2/40904885-28JPG_kqkuit.jpg
