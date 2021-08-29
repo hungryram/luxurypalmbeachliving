@@ -4,7 +4,7 @@ footer:
     pages: search.md
     quick_links: []
   footer_background_color: "#232733"
-  background_image: https://res.cloudinary.com/hungryram19/image/upload/v1605403006/templates/realestate2/clean-living-room_b3bubn.jpg
+  background_image: https://res.cloudinary.com/hungryram19/image/upload/v1630208801/templates/hoku/footer_kwu0s2.jpg
   logo: ''
   footer_bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eveniet!
     Officia repellendus aliquam necessitatibus iure, porro voluptas magnam laboriosam
@@ -41,11 +41,7 @@ sidebar:
     heading: More Listings
   single_property_sidebar: true
 colors:
-<<<<<<< HEAD
-  button_background_color: ""
-=======
-  button_background_color: ''
->>>>>>> ddaaf53c6a60bfc34dd75def60801aaabf93009d
+  button_background_color: 
   button_text_color: "#C69C6D"
   links: "#C69C6D"
   accent: "#C69C6D"

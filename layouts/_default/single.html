@@ -4,7 +4,7 @@
 <div class="uk-section">
     <div class="uk-container">
         <div class="uk-grid-small" uk-grid>
-            <div class="uk-width-{{ $size.column_size }}">
+            <div class="uk-width-1-1">
                 {{ if .Params.featured_image }}
                 <img src="{{ .Params.featured_image }}" alt="{{ .Params.image_alt_tag }}" class="mb-6">
                 {{ end }}
@@ -36,8 +36,6 @@
                 </div>
                 {{ end }}
             </div>
-            
-            {{ partial "templates/sidebar" . }}
         </div>
     </div>
 </div>
