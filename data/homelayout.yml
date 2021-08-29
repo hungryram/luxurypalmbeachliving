@@ -17,8 +17,9 @@ slideshow:
   image: https://res.cloudinary.com/hungryram19/image/upload/v1630050288/templates/hoku/kny5aathxiwy8akkx-220_comzju.jpg
 home_sections:
 - template: home-agent
-  heading: Our Team
-  body: Helpful agents that will guide you in the real estate market
+  heading: Best in the Business
+  body: ''
+  subtitle: MEET THE TEAM
 - template: text-and-image
   heading: Discover Our Finest Homes
   body: Each section of the home page can be arranged and customized through your
@@ -32,6 +33,7 @@ home_sections:
 - template: active-listings
   heading: Active Listings
   body: View active listings in the office
+  subtitle: ''
 - template: featured-boxes
   heading: The Featured Box
   body: Add in Featured Boxes and link them wherever you need to
