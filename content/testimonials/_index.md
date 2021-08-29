@@ -6,7 +6,7 @@ title_tag = "Testimonial"
 [menu.main]
 name = "Testimonials"
 parent = "Resources"
-weight = 1
+weight = 2
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

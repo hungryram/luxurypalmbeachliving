@@ -5,6 +5,6 @@ title = "Our Partners"
 title_tag = ""
 [menu.main]
 parent = "Resources"
-weight = 2
+weight = 3
 
 +++

@@ -5,6 +5,6 @@ title = "Meet the Team"
 [menu.main]
 name = "Team"
 parent = "Resources"
-weight = 4
+weight = 1
 
 +++
