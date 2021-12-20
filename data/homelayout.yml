@@ -17,15 +17,21 @@ slideshow:
   image: https://res.cloudinary.com/hungryram19/image/upload/v1630214737/templates/hoku/shutterstock_19212034972_dgqug9.jpg
 home_sections:
 - template: text-and-image
-  heading: Discover Our Finest Homes
-  body: |-
-    ##### Setting the standard for luxury real estate in Southern California
-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula
+  heading: Luxury Palm Beach Living
+  body: "Luxury Palm Beach Living, a division of The Morera Group Real Estate is a
+    professional real estate brokerage serving buyers and sellers of luxury property
+    in South Florida. The brokerage is comprised of a close group of talented realtors,
+    led by the firm’s President and Founder, Rafael Morera. Multiple offices are located
+    on the prestigious Rosemary Square in West Palm Beach, Las Olas Blvd. in Fort
+    Lauderdale, Port St. Lucie, and our newest office is located in Royal Palm Beach.
+    \n\nWith unrivaled experience and luxury market knowledge, Luxury Palm Beach Living
+    is the preeminent luxury brokerage in the Palm Beaches and Treasure Coast, while
+    doing tremendous business throughout Boca Raton, Fort Lauderdale, Delray Beach,
+    Palm Beach Gardens, Jupiter, Miami, and beyond."
   button: Read more
   button_link: "/our-team"
   image: https://res.cloudinary.com/hungryram19/image/upload/v1640036972/rafael-morera/luxurypalmbeachliving/rafael-morera.jpg
-  image_alt_tag: John
+  image_alt_tag: Rafael Morera
   image_width: 400
 - template: active-listings
   heading: Luxury Homes in Los Angeles
