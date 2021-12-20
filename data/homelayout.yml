@@ -16,10 +16,6 @@ slideshow:
   enable_white_text: false
   image: https://res.cloudinary.com/hungryram19/image/upload/v1630214737/templates/hoku/shutterstock_19212034972_dgqug9.jpg
 home_sections:
-- template: home-agent
-  heading: Best in the Business
-  body: ''
-  subtitle: MEET THE TEAM
 - template: text-and-image
   heading: Discover Our Finest Homes
   body: |-
