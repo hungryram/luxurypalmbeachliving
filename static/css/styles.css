@@ -95,7 +95,7 @@ a.uk-button.uk-button-primary {
   }
 
 .hero-overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    background:rgba(0, 0, 0, 0.2);
 }
 
 .listing-detail-overlay {

@@ -4,7 +4,7 @@
 {{ $footerSocial := .Site.Data.profile.social_media }}
 {{ $accent := $.Site.Data.appearance.colors.accent }}
 
-<footer style="{{ if $footer.background_image }}background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,9)),url({{ $footer.background_image }}) no-repeat center;{{ else }}background:{{ $footer.footer_background_color }}{{ end }}">
+<footer style="{{ if $footer.background_image }}background-size:cover;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,9)),url({{ $footer.background_image }}) no-repeat center;background-size:cover;{{ else }}background:{{ $footer.footer_background_color }}{{ end }}">
     <div class="uk-section">
         <div class="uk-container uk-container-large">
             <div class="uk-grid">

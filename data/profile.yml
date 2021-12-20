@@ -1,26 +1,26 @@
 ---
 company_name: Real Estate Company
 social_media:
-  instagram: er
-  twitter: er
-  facebook: er
+  instagram: 'https://www.instagram.com/Therafaelmorera'
+  twitter: 
+  facebook: 
   pinterest: ''
   yelp: ''
   linkedin: ''
   tiktok: ''
 contact_information:
-  phone: ''
-  name: John Doe
-  cell: 232-453-3467
-  address: 419 Street Address
-  email: ram@hungryram.com
-  license: 'BRE #541152d1f55'
-  city: Yorba Linda
-  state: California
-  zip_code: "92882"
+  phone: 
+  name: Rafael Morera
+  cell: '(561) 715-4190'
+  address: '8480 Okeechobee Blvd. suite 3'
+  email: Info@luxurypalmbeachliving.com
+  license: 'License #CQ1062038'
+  city: West Palm Beach
+  state: 'FL'
+  zip_code: "33411"
 search_engine_optimization:
-  title_tag: Real Estate Theme
-  meta_description: The only real estate theme you need
+  title_tag: The Morera Group
+  meta_description: Luxury Palm Beach Living, a division of The Morera Group Real Estate is a professional real estate brokerage serving buyers and sellers of luxury property in South Florida.
   twitter_card:
     twitter_username: ''
   facebook:
