@@ -45,15 +45,15 @@ home_sections:
   heading: ''
   body: ''
   featured:
-  - heading: View Active Listings
-    image: https://res.cloudinary.com/hungryram19/image/upload/v1605402110/templates/realestate2/40904885-28JPG_kqkuit.jpg
-    link: "/status/active"
-  - heading: Featured Listings
-    image: https://res.cloudinary.com/hungryram19/image/upload/v1605402939/templates/realestate2/livingroom_az8tp4.jpg
+  - heading: Home Value Request
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1640038926/rafael-morera/luxurypalmbeachliving/miami-luxury-home.jpg
+    link: "/home-valuation"
+  - heading: Meet the Team
+    image: ''
     link: "/featured"
-  - heading: Our Team
-    image: https://res.cloudinary.com/hungryram19/image/upload/v1605402038/templates/realestate2/40904885-26JPG_qipfli.jpg
-    link: "/our-team"
+  - heading: Contact
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1640041797/rafael-morera/luxurypalmbeachliving/dark-living-room.jpg
+    link: "/contact"
 slideshow_settings:
   slide_animation: fade
   enable_autoplay: true
