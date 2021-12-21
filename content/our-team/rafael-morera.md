@@ -28,6 +28,7 @@ twitter = ""
 youtube = ""
 
 +++
+### ABOUT
 Rafael Morera is CEO/Broker of Record of The Morera Group. A prominent real estate brokerage with offices on Rosemary Square, West Palm Beach, Las Olas Blvd. in Ft. Lauderdale, Port St. Lucie, and our newest office in Royal Palm Beach. When it comes to Realtors, not all are the same. Rafael Morera stands out with his impeccable attention to detail, charisma, and relentless efforts to get the job done no matter what it takes. From his unique style of Open Houses to marketing tactics, he is a game-changer in the Real Estate industry. Taking the Real Estate industry to a different level, he is dedicated to providing exceptional, personalized service for all of his clients. Rafael takes great pride in the relationships he builds and always works relentlessly on his client’s behalf to help them achieve their real estate goals.
 
 Rafael prides himself on being a leader in the industry, and he’s always striving to lead the field in research, innovation, and consumer education. Today’s buyers and sellers need a trusted resource that can guide them through the complex world of real estate. With his extensive knowledge and commitment to providing only the best and most timely information to his clients, he is your go-to source for real estate industry insight and advice.

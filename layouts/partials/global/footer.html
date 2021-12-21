@@ -36,7 +36,7 @@
                     {{ if $footer.logo }}
                     <img src="{{ $footer.logo }}" alt="{{ $companyName }}" width="150">
                     {{ else }}
-                    <h5 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $companyName }}</h5>
+                    <h3 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ $companyName }}</h3>
                     {{ end }}
                     <p class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">{{ .Site.Data.appearance.footer.footer_bio }}</p>
 
@@ -54,7 +54,7 @@
                 </div>
 
                 <div>
-                    <h5 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Quick Links</h5>
+                    <h3 class="{{ if $footer.enable_black_text }}uk-dark{{ else }}uk-white{{ end }}">Quick Links</h3>
                     <ul class="uk-list">
                         {{ $currentPage := . }}
                         {{ range .Site.Menus.footer }}
@@ -63,7 +63,8 @@
                     </ul>           
                 </div>
                 <div>
-                    <div class="footer-text">
+                    <div class="footer-text uk-light">
+                        <h3>Contact</h3>
                         {{ partial "templates/form" . }}
                     </div>
                 </div>
