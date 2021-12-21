@@ -19,6 +19,11 @@ name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
+name = "Search Homes"
+parent = "Buyers"
+url = "/search-homes"
+weight = 1
+[[menu.main]]
 name = "Blog"
 parent = "Resources"
 url = "/blog"
