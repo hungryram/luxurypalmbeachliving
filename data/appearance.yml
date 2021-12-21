@@ -6,11 +6,13 @@ footer:
   footer_background_color: "#232733"
   background_image: https://res.cloudinary.com/hungryram19/image/upload/v1640038926/rafael-morera/luxurypalmbeachliving/miami-luxury-home.jpg
   logo: ''
-  footer_bio: Luxury Palm Beach Living, a division of The Morera Group Real Estate is a professional real estate brokerage serving buyers and sellers of luxury property in South Florida.
+  footer_bio: Luxury Palm Beach Living, a division of The Morera Group Real Estate
+    is a professional real estate brokerage serving buyers and sellers of luxury property
+    in South Florida.
   enable_black_text: false
   disclaimer: |-
     The data and information contained within this website are for informational purposes. We try our best to keep all information up-to-date but encourage visitors to do their own research to determine the accuracy of material available on this website.
-    While we strive to keep information accurate, we do not warrant the accuracy or completeness of the information, text, graphics, links or other items contained within these materials. Plead visit our full disclaimer for more information.
+    While we strive to keep the information accurate, we do not warrant the accuracy or completeness of the information, text, graphics, links or other items contained within these materials. Please visit our full disclaimer for more information.
   equal_housing_logo: true
   mls_logo: true
   realtor_logo: true
