@@ -5,22 +5,20 @@ slideshow:
   link_label: Read More
   link: https://www.hungryram.com
   image: https://res.cloudinary.com/hungryram19/image/upload/v1640040420/rafael-morera/luxurypalmbeachliving/modern-living-room.jpg
-  body: "### Optionally integrate with IDX or use built in tools"
+  body: "Serving buyers and sellers of luxury property in South Florida"
   enable_white_text: false
 - heading: Luxury Palm Beach Living
   subtitle: 
   link_label: Contact
   link: "/contact"
-  body: Need features specific for your business? Get in touch and we'll be happy
-    to help
+  body: serving buyers and sellers of luxury property in South Florida
   enable_white_text: false
   image: https://res.cloudinary.com/hungryram19/image/upload/v1640041395/rafael-morera/luxurypalmbeachliving/backyard-pool-modern.jpg
 - heading: Luxury Palm Beach Living
   subtitle: 
   link_label: Contact
   link: "/contact"
-  body: Need features specific for your business? Get in touch and we'll be happy
-    to help
+  body: serving buyers and sellers of luxury property in South Florida
   enable_white_text: false
   image: https://res.cloudinary.com/hungryram19/image/upload/v1640041314/rafael-morera/luxurypalmbeachliving/house-with-pool.jpg
 home_sections:
@@ -42,8 +40,8 @@ home_sections:
   image_alt_tag: Rafael Morera
   image_width: 400
 - template: featured-boxes
-  heading: ''
-  body: ''
+  heading: 'The Team That Gets You Moving'
+  body: 'The Team That Gets You Moving'
   featured:
   - heading: Home Value Request
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640049773/rafael-morera/luxurypalmbeachliving/modern-3d-rentered-brown-home.jpg

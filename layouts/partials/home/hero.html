@@ -17,7 +17,7 @@
                 <div class="uk-white">
                     {{ if .subtitle }}<h4>{{ .subtitle }}</h4>{{ end }}
                     {{ if .heading }}<h1 class="uk-margin-remove">{{ .heading }}</h1>{{ end }}
-                    {{ if .body }}{{ .body | markdownify }}{{ end }}
+                    {{ if .body }}<p class="uk-text-large">{{ .body }}</p>{{ end }}
                     {{ if eq $.Site.Data.idx.enable_idx false }}
                     <div class="uk-margin-medium-top">
 

@@ -145,17 +145,19 @@
   {{ end }}
 
   {{ if eq "featured-boxes" .template }}
-  <div class="uk-section uk-section-large featured-boxes">
+  <div class="uk-section uk-section-large featured-boxes" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1640055579/rafael-morera/luxurypalmbeachliving/white-leather-pattern.jpg) repeat center;background-blend-mode:overlay;background-color:rgb(255 255 255 / 59%);">
     <div class="uk-container uk-container-large">
-      {{ if .subtitle }}
-      <p class="uk-h4 accent">{{ .subtitle }}</p>
-      {{ end }}
-      {{ if .heading }}
-      <h2 class="uk-text-center">{{ .heading }}</h2>
-      {{ end }}
-      {{ if .body }}
-      <p class="uk-text-center">{{ .body | markdownify }}</p>
-      {{ end }}
+      <div class="uk-margin-large-bottom">
+        {{ if .subtitle }}
+        <p class="uk-h4 accent">{{ .subtitle }}</p>
+        {{ end }}
+        {{ if .heading }}
+        <h2 class="uk-text-center">{{ .heading }}</h2>
+        {{ end }}
+        {{ if .body }}
+        <p class="uk-text-center">{{ .body | markdownify }}</p>
+        {{ end }}
+      </div>
       <div class="uk-grid-column-small uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: .uk-card">
         {{ range .featured }}
         <div>
