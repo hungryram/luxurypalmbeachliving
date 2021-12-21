@@ -49,8 +49,8 @@ home_sections:
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640038926/rafael-morera/luxurypalmbeachliving/miami-luxury-home.jpg
     link: "/home-valuation"
   - heading: Meet the Team
-    image: ''
-    link: "/featured"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1640048025/rafael-morera/luxurypalmbeachliving/officespace_futht3.jpg
+    link: "/team"
   - heading: Contact
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640041797/rafael-morera/luxurypalmbeachliving/dark-living-room.jpg
     link: "/contact"
