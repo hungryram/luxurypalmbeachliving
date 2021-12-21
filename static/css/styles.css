@@ -140,6 +140,12 @@ div#home-section div.uk-section:nth-child(odd) {
 
 /* NAVBAR */
 
+div.uk-modal-dialog {
+    background: rgb(254 254 254 / 95%);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
 div.full-nav-wrapper:hover ul.uk-navbar-nav li a,
 div.full-nav-wrapper:hover ul.uk-navbar-nav li a svg {
     transition: .3s ease;

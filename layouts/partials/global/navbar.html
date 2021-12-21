@@ -3,6 +3,7 @@
 {{ $navColor := .Site.Data.appearance.header }}
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
+{{ $accent := $.Site.Data.appearance.colors.accent }}
 <style>
     nav.uk-navbar-sticky ul li a,
     .uk-navbar-sticky ul li a svg {
@@ -51,10 +52,9 @@
     </nav>
 </div>
 
-
 <!-- mobile -->
 <div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive:uk-navbar-transparent; top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-padding-small uk-box-shadow-small">
+    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small uk-padding-small">
         <div class="uk-navbar-left">
             <a href="{{ .Site.BaseURL }}">
                 {{ if $navColor.transparent_background }}
@@ -66,38 +66,47 @@
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle style="{{ if $navColor.enable_white_text }}color: #fff{{ else }}color: #000;{{ end }}"></a>
+            <a class="uk-navbar-toggle" href="#modal-full" uk-toggle>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="56px" height="26px" viewBox="0 0 56 26" enable-background="new 0 0 56 26" xml:space="preserve">
+                    <rect x="3.319" y="6.552" fill="#000" width="30" height="1" shape-rendering="crispEdges"></rect>
+                    <rect x="3.319" y="12.552" fill="#000" width="30" height="1" shape-rendering="crispEdges"></rect>
+                    <rect x="3.319" y="18.552" fill="#000" width="30" height="1" shape-rendering="crispEdges"></rect>
+                    </svg>
+            </a>
         </div>
     </nav>
     </div>
-    <div id="mobile-menu-slide" uk-offcanvas>
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-            <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical" uk-nav>
+
+
+
+    <div id="modal-full" class="uk-modal-full uk-modal mobile__wrapper" uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport style="background-image:url(https://res.cloudinary.com/hungryram19/image/upload/v1640041314/rafael-morera/luxurypalmbeachliving/house-with-pool.jpg)">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+    
+            <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav uk-scrollspy="cls: uk-animation-fade; target: .animate; delay: 100; repeat: true">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
-                <li class="uk-parent">
-                    <a href="#" class="uk-text-large uk-text-light">{{ .Name }}</a>
+                <li class="uk-parent animate">
+                    <a href="#" class="uk-text-large">{{ .Name }}</a>
                     <ul class="uk-nav-sub">
                         {{ range .Children }}
-                        <li><a href="{{ .URL | absURL }}" class="uk-text-large uk-text-light">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | absURL }}" class="uk-text-large">{{ .Name }}</a></li>
                         {{ end }}
                     </ul>
                 </li>
                 {{ else }}
-                <li><a href="{{ .URL | absURL }}" class="uk-text-large uk-text-light">{{ .Name }}</a></li>
+                <li class="animate"><a href="{{ .URL | absURL }}" class="uk-text-large">{{ .Name }}</a></li>
                 {{ end }}
                 {{ end }}
-                <li class="uk-nav-divider"></li>
-                <li class="uk-nav-header"></li>
-                {{ if $headerSocial.instagram }}<a href="{{ $headerSocial.instagram }}" class="uk-icon-button uk-margin-small-right uk-margin-small-top" uk-icon="instagram" target="_blank"></a>{{ end }}
-                {{ if $headerSocial.facebook }}<a href="{{ $headerSocial.facebook }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="facebook" target="_blank"></a>{{ end }}
-                {{ if $headerSocial.pinterest }}<a href="{{ $headerSocial.pinterest }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="pinterest" target="_blank"></a>{{ end }}
-                {{ if $headerSocial.twitter }}<a href="{{ $headerSocial.twitter }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="twitter" target="_blank"></a>{{ end }}
-                {{ if $navContact.email }}<a href="{{ $navContact.email }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="mail" target="_blank"></a>{{ end }}
-                {{ if $navContact.phone }}<a href="{{ $navContact.phone }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="receiver" target="_blank"></a>{{ end }}
-                {{ if $navContact.cell }}<a href="{{ $navContact.cell }}" class="uk-icon-button  uk-margin-small-right uk-margin-small-top" uk-icon="phone" target="_blank"></a>{{ end }}
-
+                {{ if $headerSocial.facebook }}<a href="{{ $headerSocial.facebook }}" class="uk-icon-button uk-margin-small" uk-icon="icon: facebook; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.instagram }}<a href="{{ $headerSocial.instagram }}" class="uk-icon-button uk-margin-small" uk-icon="icon: instagram; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.linkedin }}<a href="{{ $headerSocial.linkedin }}" class="uk-icon-button uk-margin-small" uk-icon="icon: linkedin; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.pinterest }}<a href="{{ $headerSocial.pinterest }}" class="uk-icon-button uk-margin-small" uk-icon="icon: pinterest; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.twitter }}<a href="{{ $headerSocial.twitter }}" class="uk-icon-button uk-margin-small" uk-icon="icon: twitter; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.youtube }}<a href="{{ $headerSocial.youtube }}" class="uk-icon-button uk-margin-small" uk-icon="icon: youtube; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.tiktok }}<a href="{{ $headerSocial.tiktok }}" class="uk-icon-button uk-margin-small" uk-icon="icon: tiktok; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
+                {{ if $headerSocial.yelp }}<a href="{{ $headerSocial.yelp }}" class="uk-icon-button uk-margin-small" uk-icon="icon: yelp; ratio: .8" style="margin-right:8px;color: {{ $accent }}"></a>{{ end }}
             </ul>
         </div>
     </div>
