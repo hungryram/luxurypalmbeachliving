@@ -50,7 +50,7 @@ home_sections:
     link: "/home-valuation"
   - heading: Meet the Team
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640048025/rafael-morera/luxurypalmbeachliving/officespace_futht3.jpg
-    link: "/team"
+    link: "/our-team"
   - heading: Contact
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640041797/rafael-morera/luxurypalmbeachliving/dark-living-room.jpg
     link: "/contact"
