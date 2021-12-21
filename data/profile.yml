@@ -1,26 +1,29 @@
 ---
 company_name: Luxury Palm Beach Living
 social_media:
-  instagram: 'https://www.instagram.com/Therafaelmorera'
-  twitter: 
-  facebook: 
+  instagram: https://www.instagram.com/luxpalmbeachliving
+  twitter: ''
+  facebook: https://www.facebook.com/luxurypalmbeachliving
   pinterest: ''
   yelp: ''
   linkedin: ''
   tiktok: ''
+  youtube: ''
 contact_information:
-  phone: 
+  phone: ''
   name: Rafael Morera
-  cell: '(561) 715-4190'
-  address: '8480 Okeechobee Blvd. suite 3'
+  cell: "(561) 715-4190"
+  address: 8480 Okeechobee Blvd. suite 3
   email: Info@luxurypalmbeachliving.com
   license: 'License #CQ1062038'
   city: West Palm Beach
-  state: 'FL'
+  state: FL
   zip_code: "33411"
 search_engine_optimization:
-  title_tag: The Morera Group
-  meta_description: Luxury Palm Beach Living, a division of The Morera Group Real Estate is a professional real estate brokerage serving buyers and sellers of luxury property in South Florida.
+  title_tag: Luxury Palm Beach Living - Luxury properties in South Florida
+  meta_description: Luxury Palm Beach Living, a division of The Morera Group Real
+    Estate is a professional real estate brokerage serving buyers and sellers of luxury
+    property in South Florida.
   twitter_card:
     twitter_username: ''
   facebook:
