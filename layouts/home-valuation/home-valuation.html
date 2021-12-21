@@ -2,10 +2,18 @@
 {{ $buttonColor := .Site.Data.appearance.colors }}
 {{ $size := .Site.Data.developer }}
 
-<div class="uk-section">
+<div class="uk-section uk-section-large">
     <div class="uk-container">
-        <iframe style="width:100%; height:160px;" src="https://rafael.themoreragroup.com/sellembed.php" allowtransparency="true" frameBorder="0"> </iframe>
-
+        <div class="uk-child-width-1-2@s" uk-grid>
+            <div>
+                <h2>Discover your home’s current value instantly</h2>
+                <p>View Our Instant Market Report, Including Comparables, Instantly</p>
+                <p>Many factors will affect the current market price of a house. Use our free home valuation to find out how much it's worth today.</p>
+            </div>
+            <div>
+                <iframe style="width:100%; height:160px;" src="https://rafael.themoreragroup.com/sellembed.php" allowtransparency="true" frameBorder="0"> </iframe>
+            </div>
+        </div>
     </div>
 </div>
 {{ end }}
