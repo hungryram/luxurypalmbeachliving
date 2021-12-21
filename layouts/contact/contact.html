@@ -7,9 +7,9 @@
     <div class="uk-container">
         <div uk-grid>
             <div class="uk-width-expand@s">
-                <div class="uk-card uk-card-body uk-box">
-                    <h5 class="uk-white">Contact <span class="accent">Information</span></h5>
-                    <ul class="uk-list uk-white">
+                <div class="uk-card uk-card-body uk-box uk-light">
+                    <h5>Contact <span class="accent">Information</span></h5>
+                    <ul class="uk-list">
                         {{ if $footerContact.phone }}<li><a href="tel:{{ $footerContact.phone }}"><span uk-icon="receiver"></span>{{ $footerContact.phone }}</a></li>{{ end }}
                         {{ if $footerContact.cell }}<li><a href="tel:{{ $footerContact.cell }}"><span class="uk-margin-small-right" uk-icon="phone"></span>{{ $footerContact.cell }}</a></li>{{ end }}
                         {{ if $footerContact.email }}<li><a href="tel:{{ $footerContact.email }}"><span class="uk-margin-small-right" uk-icon="mail"></span>{{ $footerContact.email }}</a></li>{{ end }}
