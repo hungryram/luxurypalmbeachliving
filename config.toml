@@ -19,15 +19,15 @@ name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
-name = "Search Homes"
-parent = "Buyers"
-url = "/search-homes"
-weight = 1
-[[menu.main]]
 name = "Blog"
 parent = "Resources"
 url = "/blog"
 weight = 2
+[[menu.main]]
+name = "Search Homes"
+parent = "Buyers"
+url = "https://search.idxhome.com/homesearch/162704"
+weight = 1
 [[menu.main]]
 name = "Home Value Request"
 parent = "Sellers"
