@@ -1,10 +1,9 @@
 baseURL = "https://www.luxurypalmbeachliving.com/"
 languageCode = "en-us"
 summaryLength = 25
-title = "My New Hugo Site"
 [[menu.footer]]
 name = "Search Florida Homes"
-url = "/search-homes"
+url = "https://search.idxhome.com/homesearch/162704"
 weight = 2
 [[menu.footer]]
 name = "Contact the Team"

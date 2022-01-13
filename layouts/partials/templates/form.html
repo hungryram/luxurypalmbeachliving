@@ -1,26 +1,23 @@
 {{ $buttonColor := $.Site.Data.appearance.colors }}
 {{ $linkColor := $.Site.Data.appearance.colors.links }}
-<form name="Modal Sign Up" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
-    <input name="bot-field" type="hidden" />
-    <input type="hidden" name="Subject" value="Website Contact Form">
-    <input name="Source" type="hidden" value="{{ .Permalink }}" />
-
+<form id="ihf-contact-request-form" class="uk-grid-small" data-ihf-event="contact-form-submit" action="https://search.idxhome.com/contact/162704" method="POST" data-ihf-event-bound="true" uk-grid>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="Name" name="Name">
+        <input class="uk-input" type="text" placeholder="Name" name="contactName">
     </div>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="Phone" name="Phone">
+        <input class="uk-input" type="text" placeholder="Phone" name="phone">
     </div>
     <div class="uk-width-1-1">
-        <input class="uk-input" type="text" placeholder="Email" name="Email">
+        <input class="uk-input" type="text" placeholder="Email" name="email">
     </div>
     <div class="uk-width-1-1">
-        <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="Message"></textarea>
+        <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="message"></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LeGYU4UAAAAAPvNZspOUi2Q2R9exszBJdQurmoc"></div>
+    <div class="uk-width-1-1">
+        <button class="uk-button uk-button-primary uk-width-1-1" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Submit</button>
     </div>
     <div class="uk-width-1-1">
-        <button class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Submit</button>
-    </div>
-    <div class="uk-width-1-1">
-        <p>By submitting the form with your information above you are agreeing to our <a style="color:{{ $linkColor }}" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a style="color:{{ $linkColor }}" href="/legal/privacy-policy">Privacy Policy</a></p>
+        <p>By submitting the form with your information above you are agreeing to our <a href="{{ .Site.BaseURL }}legal/terms-and-conditions" class="accent">Terms and Conditions</a> and <a class="accent" href="{{ .Site.BaseURL }}legal/privacy-policy">Privacy Policy</a></p>
     </div>
 </form>
