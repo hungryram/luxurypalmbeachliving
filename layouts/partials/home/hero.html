@@ -18,13 +18,11 @@
                     {{ if .subtitle }}<h4>{{ .subtitle }}</h4>{{ end }}
                     {{ if .heading }}<h1 class="uk-margin-remove">{{ .heading }}</h1>{{ end }}
                     {{ if .body }}<p class="uk-text-large">{{ .body }}</p>{{ end }}
-                    {{ if eq $.Site.Data.idx.enable_idx false }}
                     <div class="uk-margin-medium-top">
 
-                                <a class="uk-button uk-button-primary" href="search-homes" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Search Homes</a>
+                        <a class="uk-button uk-button-primary" href="search-homes" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Search Homes</a>
 
                     </div>
-                    {{ end }}
                     {{ if $.Site.Data.idx.enable_idx }}
                     <div class="uk-margin-medium-top mobile-quicksearch">
                         {{ if $.Site.Data.idx.incomplete_subdomain }}
