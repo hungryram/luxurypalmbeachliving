@@ -3,5 +3,5 @@ ihf_client_id: 162704
 enable_idx: true
 incomplete_subdomain: search
 complete_subdomain: ''
-enable_google_recaptcha: false
+enable_google_recaptcha: true
 google_site_key: 6LeGYU4UAAAAAPvNZspOUi2Q2R9exszBJdQurmoc
