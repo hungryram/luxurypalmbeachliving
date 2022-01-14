@@ -44,15 +44,24 @@ home_sections:
   body: Our team is taking luxury real estate to the next level. We provide extensive
     knowledge of the local market in South Florida.
   featured:
+  - heading: Search Florida
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1642130334/rafael-morera/luxurypalmbeachliving/florida-balcony-view_pa65u4.jpg
+    link: https://search.idxhome.com/homesearch/162704
+  - heading: Palm Beach Island
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1640041797/rafael-morera/luxurypalmbeachliving/dark-living-room.jpg
+    link: https://search.idxhome.com/listing/results/162704?cityId=5732&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
   - heading: West Palm Beach
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640049773/rafael-morera/luxurypalmbeachliving/modern-3d-rentered-brown-home.jpg
     link: https://search.idxhome.com/listing/results/162704?cityId=5725&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
-  - heading: Meet the Team
+  - heading: Del Rey
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640048025/rafael-morera/luxurypalmbeachliving/officespace_futht3.jpg
-    link: "/our-team"
-  - heading: Contact
+    link: https://search.idxhome.com/listing/results/162704?cityId=5772&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
+  - heading: Boca Raton
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640041797/rafael-morera/luxurypalmbeachliving/dark-living-room.jpg
-    link: "/contact"
+    link: https://search.idxhome.com/listing/results/162704?cityId=5675&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
+  - heading: Jupiter
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1642130271/rafael-morera/luxurypalmbeachliving/one-story-house_wako2x.jpg
+    link: https://search.idxhome.com/listing/results/162704?cityId=5756&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
 slideshow_settings:
   slide_animation: fade
   enable_autoplay: true
