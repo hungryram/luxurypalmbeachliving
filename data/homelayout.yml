@@ -42,7 +42,8 @@ home_sections:
 - template: featured-boxes
   heading: The Team That Gets You Moving
   body: Our team is taking luxury real estate to the next level. We provide extensive
-    knowledge of the local market in South Florida.
+    knowledge of the local market in South Florida. Search homes in featured communities
+    below.
   featured:
   - heading: Search Florida
     image: https://res.cloudinary.com/hungryram19/image/upload/v1642130334/rafael-morera/luxurypalmbeachliving/florida-balcony-view_pa65u4.jpg
