@@ -44,9 +44,9 @@ home_sections:
   body: Our team is taking luxury real estate to the next level. We provide extensive
     knowledge of the local market in South Florida.
   featured:
-  - heading: Home Value Request
+  - heading: West Palm Beach
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640049773/rafael-morera/luxurypalmbeachliving/modern-3d-rentered-brown-home.jpg
-    link: "/home-valuation"
+    link: https://search.idxhome.com/listing/results/162704?cityId=5725&location=&propertyType=SFR%2CCND&minListPrice=&maxListPrice=&squareFeet=&bedrooms=0&bathCount=0&_openHomesOnlyYn=on&_dateRange=on&_virtualTourYn=on
   - heading: Meet the Team
     image: https://res.cloudinary.com/hungryram19/image/upload/v1640048025/rafael-morera/luxurypalmbeachliving/officespace_futht3.jpg
     link: "/our-team"
