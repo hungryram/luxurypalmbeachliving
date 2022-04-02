@@ -23,13 +23,6 @@
                         <a class="uk-button uk-button-primary" href="https://search.idxhome.com/homesearch/162704" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Search Homes</a>
 
                     </div>
-                    {{ if $.Site.Data.idx.enable_idx }}
-                    <div class="uk-margin-medium-top mobile-quicksearch">
-                        {{ if $.Site.Data.idx.incomplete_subdomain }}
-                        <a href="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/homesearch/{{ $ihfID }}" class="uk-button uk-button-primary" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Search Homes</a>
-                        {{ end }}
-                    </div>
-                    {{ end }}
                 </div>
             </div>
         </li>

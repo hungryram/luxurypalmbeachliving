@@ -1,23 +1,28 @@
 {{ $buttonColor := $.Site.Data.appearance.colors }}
 {{ $linkColor := $.Site.Data.appearance.colors.links }}
-<form id="ihf-contact-request-form" class="uk-grid-small" data-ihf-event="contact-form-submit" action="https://search.idxhome.com/contact/162704" method="POST" data-ihf-event-bound="true" uk-grid>
+<form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
+    <input name="bot-field" type="hidden" />
+    <input type="hidden" name="Subject" value="Website Contact Form">
+    <input name="Source" type="hidden" value="{{ .Permalink }}" />
+
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="Name" name="contactName">
+        <input class="uk-input" type="text" placeholder="Name" name="Name">
     </div>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="Phone" name="phone">
+        <input class="uk-input" type="text" placeholder="Phone" name="Phone">
     </div>
     <div class="uk-width-1-1">
-        <input class="uk-input" type="text" placeholder="Email" name="email">
+        <input class="uk-input" type="text" placeholder="Email" name="Email">
     </div>
     <div class="uk-width-1-1">
-        <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="message"></textarea>
+        <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="Message"></textarea>
     </div>
-    <div class="g-recaptcha" data-sitekey="6LeGYU4UAAAAAPvNZspOUi2Q2R9exszBJdQurmoc"></div>
     <div class="uk-width-1-1">
         <button class="uk-button uk-button-primary uk-width-1-1" {{ if $buttonColor.button_background_color }}style="background:{{ $buttonColor.button_background_color }};color:{{ $buttonColor.button_text_color }};"{{ end }}>Submit</button>
     </div>
-    <div class="uk-width-1-1">
-        <p>By submitting the form with your information above you are agreeing to our <a href="{{ .Site.BaseURL }}legal/terms-and-conditions" class="accent">Terms and Conditions</a> and <a class="accent" href="{{ .Site.BaseURL }}legal/privacy-policy">Privacy Policy</a></p>
+    <div class="uk-width-1-1 md-content">
+        <div>
+            <p>By submitting the form with your information above you are agreeing to our <a href="{{ .Site.BaseURL }}legal/terms-and-conditions" class="accent">Terms and Conditions</a> and <a class="accent" href="{{ .Site.BaseURL }}legal/privacy-policy">Privacy Policy</a></p>
+        </div>
     </div>
 </form>
